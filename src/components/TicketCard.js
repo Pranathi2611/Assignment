@@ -63,7 +63,9 @@ function TicketCard({ ticket, users, groupBy }) {
           <h6 className="ticket-id">{ticket.id}</h6>
           {groupBy !== 'user' && <UserAvatar user={user} />}
           </div>
-          <div style={{ display: 'flex' }}>
+          <div style={{ display: 'flex',justifyContent: 'space-between',
+            alignItems: 'center',
+            width: '100%'}}>
             {/* Conditionally show status icon beside the title if groupBy is 'priority' or 'user' */}
             {(groupBy === 'priority' || groupBy === 'user') && (
               <img 
@@ -81,7 +83,7 @@ function TicketCard({ ticket, users, groupBy }) {
             alt={`Priority ${ticket.priority}`}
             className="priority-icon"
           />
-          <p style={{ marginLeft: '10px', color:'grey', fontSize:'5' }}>Feature Request</p>
+          <p style={{ marginLeft: '10px', color:'grey'}}>Feature Request</p>
         </div>
       </div>
       {/* Only show the user info in the card if grouping is not by 'user' */}
