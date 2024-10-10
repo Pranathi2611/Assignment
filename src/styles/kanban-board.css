@@ -1,0 +1,43 @@
+.kanban-column {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-right: 15px;
+  }
+  
+  /* .kanban-column-header {
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 20px; */
+  /* } */
+  
+  /* .status-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    position:left;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  } */
+   /* */ 
+   /* Flexbox for aligning the icon and title side by side */
+.kanban-column-header {
+  display: flex;           /* Aligns items in a row */
+  align-items: center;      /* Vertically center the icon and heading */
+}
+
+.status-icon {
+  width: 20px;              /* Set the icon size */
+  height: 20px;
+  margin-right: 8px;        /* Space between the icon and the heading */
+}
+
+.kanban-column-title {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0;                /* Remove default margin */
+}

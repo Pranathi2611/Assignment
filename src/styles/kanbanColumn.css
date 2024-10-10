@@ -1,0 +1,70 @@
+.kanban-column-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f5f5f5; /* Background color for header */
+  border-bottom: 1px solid #ddd; /* Border for header separation */
+  margin-bottom: 15px; /* Adds space between header and ticket cards */
+}
+
+.kanban-column-left {
+  display: flex;
+  align-items: center;
+  position: relative; /* Needed for positioning the availability dot relative to the user avatar */
+}
+
+.status-icon, .user-avatar {
+  margin-right: 10px; /* Space between icon/avatar and title */
+  width: 24px; /* Adjust as needed */
+  height: 24px; /* Adjust as needed */
+  border-radius: 50%; /* Makes user avatar circular */
+  position: relative; /* Needed to position the availability dot */
+}
+
+.kanban-column-title {
+  margin-right: 10px; /* Space between title and ticket count */
+  font-size: 16px; /* Adjust title size */
+  font-weight: bold; /* Make title bold */
+}
+
+.ticket-count {
+  font-size: 14px; /* Adjust font size */
+  color: #555; /* Adjust color */
+}
+
+.kanban-column-right {
+  display: flex;
+  align-items: center;
+}
+
+.add-ticket, .more-options {
+  background: none;
+  border: none;
+  font-size: 18px; /* Adjust size for icons */
+  margin-left: 10px; /* Space between "+" and "..." */
+  cursor: pointer;
+}
+
+.add-ticket:hover, .more-options:hover {
+  color: #007bff; /* Hover effect */
+}
+
+/* Availability dot styling */
+.availability-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  position: absolute; /* Absolute position to move dot within avatar container */
+  bottom: 0; /* Position at the bottom */
+  right: 0; /* Position at the right */
+  border: 2px solid white; /* Adds a white border to visually separate the dot from the avatar */
+}
+
+.available {
+  background-color: green;
+}
+
+.unavailable {
+  background-color: grey;
+}

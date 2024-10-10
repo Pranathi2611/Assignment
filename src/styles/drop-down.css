@@ -1,0 +1,129 @@
+/* Header */
+.header {
+    width: 100%;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  }
+  
+  /* Dropdown container and button */
+  .dropdown-container {
+    position: relative;
+    display: inline-block;
+    margin-left: 0; /* Align it to the left */
+    /* padding-left: 20px;Add padding to push it from the left edge */
+  }
+  
+  .dropdown-button {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    outline: none;
+    transition: background-color 0.3s ease, border 0.3s ease;
+  }
+  
+  .dropdown-button:hover {
+    background-color: #f9f9f9;
+    border-color: #bdbdbd; /* Slightly darker border on hover */
+  }
+  
+  /* Filter icon */
+  .filter-icon {
+    margin-right: 5px; /* Space between icon and text */
+  }
+  
+  /* Dropdown Menu */
+  .dropdown-menu {
+    position: absolute;
+    top: 40px; /* Below the button */
+    left: 0;
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 12px;
+    z-index: 1000;
+    min-width: 200px; /* Ensure minimum width */
+    animation: dropdown-fade-in 0.2s ease-in-out; /* Subtle fade-in animation */
+  }
+  
+  /* Animation for dropdown */
+  @keyframes dropdown-fade-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Dropdown sections */
+  .dropdown-section {
+    margin-bottom: 15px;
+  }
+  
+  .dropdown-section label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333; /* Slightly darker text for labels */
+  }
+  
+  .dropdown-section select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color: #fafafa;
+    transition: border-color 0.2s ease;
+  }
+  
+  .dropdown-section select:focus {
+    border-color: #007BFF; /* Add a blue border on focus */
+    outline: none; /* Remove default browser focus outline */
+  }
+  
+  /* Close the last section margin */
+  .dropdown-section:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Optional: Add hover effect on dropdown items if needed */
+  .dropdown-section select option:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; /* Optional: Adds spacing between sections */
+  }
+  
+  .dropdown-section label {
+    margin-right: 0px; /* Adds space between the label and select element */
+    white-space: nowrap; /* Prevents label from breaking into a new line */
+  }
+  
+  .dropdown-section select {
+    margin-left: 10px;
+    padding: 5px; /* Optional: Adds padding for better appearance */
+    width: 75%;
+  }
+  

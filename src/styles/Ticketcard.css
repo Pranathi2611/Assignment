@@ -1,0 +1,33 @@
+.user-info {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .user-avatar {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .availability-dot {
+    position: absolute;
+    left: 45%;
+    transform: translateX(-5%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: grey;
+  }
+  
+  .available {
+    background-color: green; /* Green dot for available */
+  }
+  
+  .unavailable {
+    background-color: grey; /* Grey dot for unavailable */
+  }
+  .ticket-id {
+    font-weight: normal; /* or lighter */
+    color: #555; /* Optional: You can also adjust the color to a lighter shade for more subtlety */
+  }
+  
