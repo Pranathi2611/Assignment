@@ -60,7 +60,7 @@ function TicketCard({ ticket, users, groupBy }) {
             alignItems: 'center',
             width: '100%'
           }}>
-          <h6 className="ticket-id">{ticket.id}</h6>
+          <h4 className="ticket-id">{ticket.id}</h4>
           {groupBy !== 'user' && <UserAvatar user={user} />}
           </div>
           <div style={{ display: 'flex',justifyContent: 'space-between',
@@ -74,7 +74,7 @@ function TicketCard({ ticket, users, groupBy }) {
                 className="status-icon" 
               />
             )}
-            <h6>{ticket.title}</h6>
+            <h4 className="ticket-title">{ticket.title}</h4>
           </div>
         </div>
         <div style={{ display: 'flex' }}>
@@ -83,7 +83,13 @@ function TicketCard({ ticket, users, groupBy }) {
             alt={`Priority ${ticket.priority}`}
             className="priority-icon"
           />
-          <p style={{ marginLeft: '10px', color:'grey'}}>Feature Request</p>
+          <p style={{ margin:'0',padding:'4px',fontSize: '12px', marginLeft: '10px', color: 'grey' }}>
+  Feature Request
+</p>
+
+          {/* <p style="font-size: 12px;,marginLeft: 10px, color:grey">Feature Request</p> */}
+
+          {/* <p style={{ marginLeft: '10px', color:'grey'}}>Feature Request</p> */}
         </div>
       </div>
       {/* Only show the user info in the card if grouping is not by 'user' */}

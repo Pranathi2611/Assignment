@@ -27,7 +27,16 @@
     background-color: grey; /* Grey dot for unavailable */
   }
   .ticket-id {
+    margin:0;
+    padding:0;
     font-weight: normal; /* or lighter */
-    color: #555; /* Optional: You can also adjust the color to a lighter shade for more subtlety */
+    color: #696767; /* Optional: You can also adjust the color to a lighter shade for more subtlety */
+  }
+  .ticket-title {
+    margin:0;
+    padding-top:10px ;
+    padding-bottom:10px ;
+    font-weight:500;
+    color: black; /* Optional: You can also adjust the color to a lighter shade for more subtlety */
   }
   
