@@ -53,14 +53,14 @@ function TicketCard({ ticket, users, groupBy }) {
 
   return (
     <div className="ticket-card" style={{ display: 'flex' }}>
-      <div style={{ display: 'block' }}>
+      <div style={{ display: 'block' ,width:'100%'}}>
         <div className="ticket-card-header">
           <div style={{ display: 'flex', 
             justifyContent: 'space-between',
             alignItems: 'center',
             width: '100%'
           }}>
-          <h4 className="ticket-id">{ticket.id}</h4>
+          <h5 className="ticket-id">{ticket.id}</h5>
           {groupBy !== 'user' && <UserAvatar user={user} />}
           </div>
           <div style={{ display: 'flex',justifyContent: 'space-between',
@@ -72,9 +72,10 @@ function TicketCard({ ticket, users, groupBy }) {
                 src={getStatusIcon(ticket.status)} 
                 alt="status" 
                 className="status-icon" 
+                style={{ width: '20px', height: '20px' }}
               />
             )}
-            <h4 className="ticket-title">{ticket.title}</h4>
+            <h5 className="ticket-title">{ticket.title}</h5>
           </div>
         </div>
         <div style={{ display: 'flex' }}>
