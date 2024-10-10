@@ -37,10 +37,7 @@
     padding-top:10px ;
     padding-bottom:10px ;
     font-weight:500;
-    color: rgb(3, 0, 0); /* Optional: You can also adjust the color to a lighter shade for more subtlety */
+    color:black; /* Optional: You can also adjust the color to a lighter shade for more subtlety */
   }
-  .status-icon{
-    width: 50px;
-    height:200px;
-  }
+  
   

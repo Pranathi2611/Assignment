@@ -51,9 +51,8 @@ function KanbanBoard({ tickets, users }) {
     if (groupBy === 'user') {
       // First, check if users is an array
       if (Array.isArray(users)) {
-        // Map userId to the user object from the users array
         const user = users.find(u => u.id === ticket.userId);
-        // const user = users[ticket.userId]; // Directly access the user from users object
+        
 
         key = user ? user.name : 'Unknown User'; // Fallback to 'Unknown User' if no match
       } else {

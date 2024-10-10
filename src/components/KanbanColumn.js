@@ -74,16 +74,7 @@ function KanbanColumn({ groupName, tickets, users, groupBy }) {
             </>
           ) : isUserGrouping && user ? (
             <>
-              {/* <img
-                src="https://img.icons8.com/stickers/50/user-male-circle.png"
-                alt={user.name}
-                className="user-avatar"
-              />
-              <div
-                className={`availability-dot ${
-                  user.available ? "available" : "unavailable"
-                }`}
-              ></div> */}
+              
               <div className="user-info">
               <img
                 width="50"
